@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNA Transfers Visualizations</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html"><img src="Logo_Université_Gustave_Eiffel_2020.svg" alt="Logo" class="logo"></a>
+    </div>
+    <div class="main-text">
+      <h1 class="title">
+        SNA Visualisations
+        <br>
+      </h1>
+      <h4 style="text-align: center;">Transfer Market 2000 - 2021</h4>
+    </div>
+  </div>
+  <marquee behavior="scroll" direction="left" scrollamount="15" class="marquee">Brought to you by: Abdourrahmane
+    Camara, Tom Billard, Ningman Xu and Zakaria Tahiri</marquee>
+  <div class="links">
+    <a href="index.html" class="link link1">Home</a>
+    <a href="viz.html" class="link link2">Vizualisations</a>
+  </div>
+  <div class="summ">
+    <h1>Summary</h1>
+    <p>
+      <br><br>
+      1. Nous nous sommes basé sur des données récoltées grâce au <a style="font-weight:bolder;text-decoration: none;" href="https://en.wikipedia.org/wiki/Web_scraping"><b>Web Scraping</b></a> conçu par Abdourrahmane, à partir
+      du lien <a href="https://www.transfermarkt.fr/"
+        style="font-weight:bolder;text-decoration: none;">Transfermarket</a>. Le
+      nettoyage des données a été mené par Tom, et la présentation des graphiques est faite par Zakaria.
+      <br><br>
+      Dans ce mini site, vous trouverez les éléments nécessaires pour vous aider à mieux comprendre les données et les
+      vizualisations.
+      <br><br>
+      2. Notre projet consiste d'analyser les meilleures 250 transactions/transfers des équipes entre 2000 et 2022, y
+      compris les ligues du monde entier.
+      <br><br>
+      Voici un aperçu du dataset utilisé pour notre projet
+      <br><br>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Age</th>
+          <th>Market_value</th>
+          <th>Season</th>
+          <th>Team_from</th>
+          <th>Country_from</th>
+          <th>League_from</th>
+          <th>Team_to</th>
+          <th>Country_to</th>
+          <th>League_to</th>
+          <th>Transfer_fee</th>
+          <th>Season_end</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>3717</th>
+          <td>Neymar</td>
+          <td>Ailier gauche</td>
+          <td>25</td>
+          <td>100000000.0</td>
+          <td>2017</td>
+          <td>Barcelone</td>
+          <td>Espagne</td>
+          <td>LaLiga</td>
+          <td>Paris SG</td>
+          <td>France</td>
+          <td>Ligue 1</td>
+          <td>222000000.0</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <th>4519</th>
+          <td>Kylian Mbappé</td>
+          <td>Avant-centre</td>
+          <td>19</td>
+          <td>120000000.0</td>
+          <td>2018</td>
+          <td>AS Monaco</td>
+          <td>France</td>
+          <td>Ligue 1</td>
+          <td>Paris SG</td>
+          <td>France</td>
+          <td>Ligue 1</td>
+          <td>145000000.0</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <th>4630</th>
+          <td>Ousmane Dembélé</td>
+          <td>Ailier droit</td>
+          <td>20</td>
+          <td>33000000.0</td>
+          <td>2017</td>
+          <td>Bor. Dortmund</td>
+          <td>Allemagne</td>
+          <td>Bundesliga</td>
+          <td>Barcelone</td>
+          <td>Espagne</td>
+          <td>LaLiga</td>
+          <td>135000000.0</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <th>4629</th>
+          <td>Philippe Coutinho</td>
+          <td>Milieu offensif</td>
+          <td>25</td>
+          <td>90000000.0</td>
+          <td>2017</td>
+          <td>FC Liverpool</td>
+          <td>Angleterre</td>
+          <td>Premier League</td>
+          <td>Barcelone</td>
+          <td>Espagne</td>
+          <td>LaLiga</td>
+          <td>135000000.0</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <th>4753</th>
+          <td>João Félix</td>
+          <td>Deuxième attaquant</td>
+          <td>19</td>
+          <td>70000000.0</td>
+          <td>2019</td>
+          <td>Benfica</td>
+          <td>Portugal</td>
+          <td>Liga NOS</td>
+          <td>Atlético Madrid</td>
+          <td>Espagne</td>
+          <td>LaLiga</td>
+          <td>127200000.0</td>
+          <td>2020</td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!--
+    <div class="main-container">
+        <div class="header">
+            <a href="index.html" class="logo"><img src="Logo_Université_Gustave_Eiffel_2020.svg" alt="Logo"
+                    class="logo"></a>
+            <h1 class="title">
+                Welcome to this section of vizualisations
+            </h1>
+            <marquee behavior="scroll" direction="left" scrollamount="10" class="marquee">Brought to you by: Abdourrahmane
+                Camara, Tom Billard and Zakaria Tahiri</marquee>
+        </div>
+        
+        <div class="links">
+            <a href="" class="link1">Link 1</a>
+            <a href="" class="link2">Link 2</a>
+            <a href="" class="link3">Link 3</a>
+        </div>
+    </div>
+-->
