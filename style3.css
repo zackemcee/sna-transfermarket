@@ -189,3 +189,37 @@ th:hover{
 .box.chord{
     background-color: #6b6b6b;
 }
+
+.footer p, .footer a, .footer h4{
+    background-color: transparent;
+    color: #f8f8f8;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 10px 10px 10px;
+}
+.footer p{
+    font-size: .9em;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+    background-color: #2d2d80;
+    width: 80%;
+    margin: 10vh auto;
+    position: relative;
+}
+.footer h4{
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+.ruler{
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+
+
