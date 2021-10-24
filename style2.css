@@ -140,4 +140,34 @@ p{
 }
 
 
+table{
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.753);
+    font-size: 12px;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 35px;
+}
+table td{
+    padding: 5px;
+    text-align: center;
+}
+td:hover{
+    background-color: black;
+    cursor: pointer;
+    color: #f8f8f8;
+}
+th{
+    text-align: center;
+    padding: 5px;
+}
+th:hover{
+    background-color: black;
+    cursor: pointer;
+    color: #f8f8f8;
+
+}
+
 
