@@ -52,10 +52,10 @@ p{
     text-align: center;
     font-size: 25px;
     width: 500;
+    transition: transform ease-out .5s;
 }
-.main-text:hover{
+.title:hover{
     transform: rotateX(360deg);
-    transition: all ease-out .5s;
 }
 
 
@@ -155,7 +155,7 @@ table td{
     text-align: center;
 }
 td:hover{
-    background-color: black;
+    background-color: #2d2d80;
     cursor: pointer;
     color: #f8f8f8;
 }
@@ -164,10 +164,19 @@ th{
     padding: 5px;
 }
 th:hover{
-    background-color: black;
+    background-color: #2d2d80;
     cursor: pointer;
     color: #f8f8f8;
 
+}
+
+
+.break{
+    width: 360px;
+    height: 3px;
+    background-color: pink;
+    margin-top: 5px;
+    background-color: #2d2d80;
 }
 
 
