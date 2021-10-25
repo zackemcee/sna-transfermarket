@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #zoom-img {
+            margin-top: 25px;
+            width: 1250px;
+            height: 841px;
+            background: url("media/countries/country_map.png");
+            background-position: center;
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="zoom-img"></div>
+    <a href="gephi.html" style="background-color: #2d2d80;
+        color:#f8f8f8;
+        justify-content: center;
+        position:absolute;
+        margin:  10px;
+        padding: 5px;
+        font-style: normal;
+        list-style: none;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: ease-out transform .3s,ease-out box-shadow .3s;
+        text-align: center;
+        margin: 25px 50px;
+        width: 150px;
+        top:2%;
+        left:60%;">HOME</a>
+
+        <a href="media/countries/country_map.png" target="_blank" style="    background-color: #2d2d80;
+        color:#f8f8f8;
+        justify-content: center;
+        position:absolute;
+        margin: 0 5px;
+        padding: 5px;
+        font-style: normal;
+        list-style: none;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: ease-out transform .3s,ease-out box-shadow .3s;
+        text-align: center;
+        margin: 25px 50px;
+        width: 150px;
+        top:7%;
+        left:60%">FULL IMAGE</a>
+
+
+    <script>// CREDITS TO https://www.cssscript.com/image-zoom-pan-hover-detail-view/
+        var addZoom = function (target) {
+            // (A) FETCH CONTAINER + IMAGE
+            var container = document.getElementById(target),
+                imgsrc = container.currentStyle || window.getComputedStyle(container, false),
+                imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, ""),
+                img = new Image();
+
+            // (B) LOAD IMAGE + ATTACH ZOOM
+            img.src = imgsrc;
+            img.onload = function () {
+                var imgWidth = img.naturalWidth,
+                    imgHeight = img.naturalHeight,
+                    ratio = imgHeight / imgWidth,
+                    percentage = ratio * 100 + '%';
+
+                // (C) ZOOM ON MOUSE MOVE
+                container.onmousemove = function (e) {
+                    var boxWidth = container.clientWidth,
+                        rect = e.target.getBoundingClientRect(),
+                        xPos = e.clientX - rect.left,
+                        yPos = e.clientY - rect.top,
+                        xPercent = xPos / (boxWidth / 100) + "%",
+                        yPercent = yPos / ((boxWidth * ratio) / 100) + "%";
+
+                    Object.assign(container.style, {
+                        backgroundPosition: xPercent + ' ' + yPercent,
+                        backgroundSize: imgWidth + 'px'
+                    });
+                };
+
+                // (D) RESET ON MOUSE LEAVE
+                container.onmouseleave = function (e) {
+                    Object.assign(container.style, {
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover'
+                    });
+                };
+            }
+        };
+
+        window.addEventListener("load", function () {
+            addZoom("zoom-img");
+        });
+    </script>
+</body>
+
+</html>
