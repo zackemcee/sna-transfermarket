@@ -169,20 +169,20 @@ th:hover{
     font-weight: bolder;
     color: #f8f8f8;
     text-align: center;
-    padding: 10px;
+
 }
 .box:hover{
     cursor: pointer;
     transform: scale(1.1);
-
 }
 
+
 .box.gephi{
-    background-color: #231750a9;
+    background-color: #0a0b0f;
     color: #f8f8f8;
 }
 .box.py{
-    background-color: #202124;
+    background-color: #9b8028;
     color: #f8f8f8;
 }
 
