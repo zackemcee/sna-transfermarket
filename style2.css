@@ -5,6 +5,8 @@
     background-color: #f8f8f8;
     color:#2d2d80;
     line-height: 1.5em;
+    text-transform: uppercase;
+
 }
 
 body{
@@ -47,6 +49,7 @@ h1{
 }
 p{
     text-align: justify;
+    text-transform: none;
 }
 .title{
     text-align: center;
@@ -68,6 +71,7 @@ p{
 }
 
 .link{
+    font-weight: bold;
     background-color: #2d2d80;
     color:#f8f8f8;
     justify-content: center;
@@ -123,7 +127,7 @@ p{
 }
 .footer{
     background-color: #2d2d80;
-    width: 80%;
+    width: 75%;
     margin: 10vh auto;
     position: relative;
 }

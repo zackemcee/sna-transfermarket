@@ -5,6 +5,7 @@
     background-color: #f8f8f8;
     color:#2d2d80;
     line-height: 1.5em;
+    
 }
 
 body{
@@ -52,10 +53,10 @@ p{
     text-align: center;
     font-size: 25px;
     width: 500;
+    transition: transform ease-out .5s;
 }
-.main-text:hover{
+.title:hover{
     transform: rotateX(360deg);
-    transition: all ease-out .5s;
 }
 
 
@@ -81,6 +82,8 @@ p{
     text-align: center;
     margin: 25px 50px;
     width: 150px;
+    font-weight: bold;
+
 }
 .link:hover{
     transform: scale(1.5);

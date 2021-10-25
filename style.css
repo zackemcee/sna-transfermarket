@@ -5,6 +5,8 @@
     background-color: #f8f8f8;
     color:#2d2d80;
     line-height: 1.5em;
+    text-transform: uppercase;
+
 }
 
 body{
@@ -47,10 +49,10 @@ body{
     text-align: center;
     font-size: 25px;
     width: 500;
+    transition: transform ease-out .5s;
 }
-.main-text:hover{
+.title:hover{
     transform: rotateX(360deg);
-    transition: all ease-out .5s;
 }
 
 .iframe{
@@ -67,6 +69,7 @@ body{
 }
 
 .link{
+    font-weight: bold;
     background-color: #2d2d80;
     color:#f8f8f8;
     justify-content: center;
@@ -125,7 +128,7 @@ body{
 }
 .footer{
     background-color: #2d2d80;
-    width: 80%;
+    width: 78%;
     margin: 10vh auto;
     position: relative;
 }
