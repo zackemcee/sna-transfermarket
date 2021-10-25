@@ -143,7 +143,9 @@ p{
     background-color: #2d2d80;
     color: #f8f8f8;
 }
-
+.sub .map{
+    width: auto;
+}
 
 
 
