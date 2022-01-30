@@ -24,21 +24,154 @@
     </div>
     <!-- <marquee behavior="scroll" direction="left" scrollamount="15" class="marquee">Brought to you by: Abdourrahmane Camara, Tom Billard, Ningman Xu and Zakaria Tahiri</marquee> -->
     <div class="links">
-        <a href="summary.html" class="link link1">Summary</a>
         <a href="viz.html" class="link link2">Vizualisations</a>
+        <a href="https://zackemcee.github.io/main_site/" class="link link2" target="_blank">Main Website</a>
+
     </div>
     <h2 class="center-text">Les 250 meilleures transactions de football entre l'année 2000 et 2022</h2>
     <!-- <p align="center"><iframe src="summary.html" class="iframe" frameBorder="0" width="80%" height="1000"></iframe> -->
     <!-- </p> -->
-    <div class="footer">
-        <h4>Brought to you by</h4><div class="ruler"> </div><p>Abdourrahmane Camara, Tom Billard, Ningman Xu and Zakaria Tahiri</p>
-    </div>
     <script src="script.js"></script>
+
+    <div class="container">
+        <h1>Summary</h1>
+        <p>
+          <br><br>
+          <b>1. </b>Nous nous sommes basé sur des données récoltées grâce au <a style="font-weight:bolder;text-decoration: none;" href="https://en.wikipedia.org/wiki/Web_scraping" target=" _blank"><b>Web Scraping</b></a> conçu par Abdourrahmane, à partir
+          du lien <a href="https://www.transfermarkt.fr/" target=" _blank" 
+            style="font-weight:bolder;text-decoration: none;">Transfermarket</a>. Le
+          nettoyage des données a été mené par Tom, et la présentation des graphiques est faite par Zakaria.
+          <br><br>
+          Dans ce mini site, vous trouverez les éléments nécessaires pour vous aider à mieux comprendre les données et les
+          vizualisations.
+          <br><br>
+          <b>2. </b>Notre projet consiste d'analyser les meilleures 250 transactions/transfers des équipes entre 2000 et 2022, y
+          compris les ligues du monde entier.
+          <br><br>
+          <b>3. </b>Nous menons une analyse sur les transfert en termes de performance de pays, des ligues et des clubs en matière de <b>degré sortant</b> (Argent sortante), <b>degré entrant</b> (Argent entrante), et la <b><a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Betweenness_centrality" target=" _blank" >betweenness centrality</a></b> qui se base sur l'autorité exercé par un certain noeud.
+          <br><br>
+          Voici un aperçu du dataset utilisé pour notre projet
+          <br><br>
+
+        <table border="1" class="dataframe">
+          <thead>
+            <tr style="text-align: right;">
+              <th></th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Age</th>
+              <th>Market_value</th>
+              <th>Season</th>
+              <th>Team_from</th>
+              <th>Country_from</th>
+              <th>League_from</th>
+              <th>Team_to</th>
+              <th>Country_to</th>
+              <th>League_to</th>
+              <th>Transfer_fee</th>
+              <th>Season_end</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>3717</th>
+              <td>Neymar</td>
+              <td>Ailier gauche</td>
+              <td>25</td>
+              <td>100000000.0</td>
+              <td>2017</td>
+              <td>Barcelone</td>
+              <td>Espagne</td>
+              <td>LaLiga</td>
+              <td>Paris SG</td>
+              <td>France</td>
+              <td>Ligue 1</td>
+              <td>222000000.0</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th>4519</th>
+              <td>Kylian Mbappé</td>
+              <td>Avant-centre</td>
+              <td>19</td>
+              <td>120000000.0</td>
+              <td>2018</td>
+              <td>AS Monaco</td>
+              <td>France</td>
+              <td>Ligue 1</td>
+              <td>Paris SG</td>
+              <td>France</td>
+              <td>Ligue 1</td>
+              <td>145000000.0</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th>4630</th>
+              <td>Ousmane Dembélé</td>
+              <td>Ailier droit</td>
+              <td>20</td>
+              <td>33000000.0</td>
+              <td>2017</td>
+              <td>Bor. Dortmund</td>
+              <td>Allemagne</td>
+              <td>Bundesliga</td>
+              <td>Barcelone</td>
+              <td>Espagne</td>
+              <td>LaLiga</td>
+              <td>135000000.0</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th>4629</th>
+              <td>Philippe Coutinho</td>
+              <td>Milieu offensif</td>
+              <td>25</td>
+              <td>90000000.0</td>
+              <td>2017</td>
+              <td>FC Liverpool</td>
+              <td>Angleterre</td>
+              <td>Premier League</td>
+              <td>Barcelone</td>
+              <td>Espagne</td>
+              <td>LaLiga</td>
+              <td>135000000.0</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th>4753</th>
+              <td>João Félix</td>
+              <td>Deuxième attaquant</td>
+              <td>19</td>
+              <td>70000000.0</td>
+              <td>2019</td>
+              <td>Benfica</td>
+              <td>Portugal</td>
+              <td>Liga NOS</td>
+              <td>Atlético Madrid</td>
+              <td>Espagne</td>
+              <td>LaLiga</td>
+              <td>127200000.0</td>
+              <td>2020</td>
+            </tr>
+          </tbody>
+        </table>
+        </p>
+        </p>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+    
+    </html>
 </body>
 
 </html>
 
-
+<!-- {% comment %} <div class="footer">
+    <h4>Brought to you by</h4>
+    <div class="ruler"> </div>
+    <p>Abdourrahmane Camara, Tom Billard, Ningman Xu and Zakaria Tahiri</p>
+  </div> {% endcomment %} -->
 
 <!--
     <div class="main-container">

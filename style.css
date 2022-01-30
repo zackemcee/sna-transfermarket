@@ -1,12 +1,11 @@
 *{
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     background-color: #f8f8f8;
     color:#2d2d80;
     line-height: 1.5em;
     text-transform: uppercase;
-
 }
 
 body{
@@ -144,6 +143,97 @@ body{
     left: 30px;
     top: 50px;
 }
+
+
+.summ{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+.footer p, .footer a, .footer h4{
+    background-color: transparent;
+    color: #f8f8f8;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 10px 10px 10px;
+}
+.footer p{
+    font-size: .9em;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+    background-color: #2d2d80;
+    width: 75%;
+    margin: 10vh auto;
+    position: relative;
+}
+.footer h4{
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+.ruler{
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+
+table{
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.753);
+    font-size: 12px;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 35px;
+    background-color: #f8f8f8;
+    
+}
+table td{
+    padding: 5px;
+    text-align: center;
+    text-transform: none;
+    font-size: .9em;
+}
+td:hover{
+    background-color: #2d2d80;
+    cursor: pointer;
+    color: #f8f8f8;
+
+}
+th{
+    text-align: center;
+    padding: 5px;
+    text-transform: none;
+}
+th:hover{
+    background-color: #2d2d80;
+    cursor: pointer;
+    color: #f8f8f8;
+
+}
+
+
+.break{
+    width: 160px;
+    height: 3px;
+    background-color: pink;
+    margin-top: 5px;
+    background-color: #2d2d80;
+}
+
+
+
+
+
 
 
 
